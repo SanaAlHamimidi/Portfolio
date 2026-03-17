@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sana Al Hamimidi — Data Science</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ==============================
+       NAVIGATION
+  ============================== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">Sana <span>Al Hamimidi</span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Hamburger for mobile -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==============================
+       HERO
+  ============================== -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="eyebrow">
+          <div class="eyebrow-line"></div>
+          <span>Data Science Portfolio</span>
+        </div>
+        <h1>Sana<br><em>Al Hamimidi</em></h1>
+        <p class="hero-desc">
+          Data Science student at SJSU. I build end-to-end ML pipelines,
+          design databases, and turn messy data into clear, actionable results.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary">View My Work →</a>
+          <a href="#contact" class="btn-outline">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-card" id="heroCard">
+        <div class="hero-card-label">At a Glance</div>
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-num">3.7</div>
+            <div class="stat-label">GPA at SJSU</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">94%</div>
+            <div class="stat-label">Best model accuracy</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">2+</div>
+            <div class="stat-label">Projects built</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">2026</div>
+            <div class="stat-label">Graduation year</div>
+          </div>
+        </div>
+        <div class="tag-list">
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">R</span>
+          <span class="tag">Pandas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       ABOUT
+  ============================== -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="eyebrow">
+          <div class="eyebrow-line"></div>
+          <span>About Me</span>
+        </div>
+        <h2>Curious mind,<br>data-driven approach</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hi, I'm <strong>Sana Al Hamimidi</strong> — a Data Science student at
+            San Jose State University with hands-on experience building and evaluating
+            machine learning models, working with real-world datasets, and communicating
+            results clearly to teammates.
+          </p>
+          <p>
+            I'm comfortable across the full ML workflow: <strong>data cleaning,
+            feature engineering, model training, and evaluation</strong>. My projects
+            span database systems and time-series classification — always with a focus
+            on measurable outcomes.
+          </p>
+          <p>
+            I'm actively seeking <strong>internship opportunities in data science
+            or analytics</strong> where I can contribute and keep growing.
+          </p>
+        </div>
+
+        <div class="about-highlights">
+          <div class="highlight">
+            <div class="highlight-icon">🎓</div>
+            <div>
+              <strong>B.S. Data Science — SJSU</strong>
+              <span>Expected May 2026 · GPA: 3.7</span>
+            </div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-icon">📍</div>
+            <div>
+              <strong>San Jose, CA</strong>
+              <span>US Citizen · Open to remote and on-site roles</span>
+            </div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-icon">💡</div>
+            <div>
+              <strong>Interests</strong>
+              <span>ML Classification · Database Systems · Bioinformatics</span>
+            </div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-icon">🔍</div>
+            <div>
+              <strong>Currently seeking</strong>
+              <span>Data Science or Analytics internships for 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       PROJECTS
+  ============================== -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="eyebrow">
+          <div class="eyebrow-line"></div>
+          <span>Projects</span>
+        </div>
+        <h2>Selected Work</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-num">01 / Machine Learning</div>
+            <h3>Human Activity Recognition</h3>
+          </div>
+          <div class="project-body">
+            <p>End-to-end activity recognition system using smartphone IMU sensor data.
+            Built a full pipeline: preprocessing, segmentation, feature engineering from
+            time-series windows, and benchmarked multiple ML classifiers. Boosted
+            performance with XGBoost ensemble methods.</p>
+            <div class="project-metric">
+              <span class="metric-num">94.77%</span>
+              <span class="metric-label">Test accuracy · 0.9372 macro-F1</span>
+            </div>
+            <div class="project-tags">
+              <span>Python</span><span>XGBoost</span>
+              <span>scikit-learn</span><span>Time-Series ML</span>
+            </div>
+            <a href="#" class="project-link">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-num">02 / Database Systems</div>
+            <h3>Online Cafe Order Management</h3>
+          </div>
+          <div class="project-body">
+            <p>3-tier cafe order management system with a Tkinter GUI, Python MySQL
+            connector, and a BCNF-normalized MySQL schema. Handles customer orders,
+            sales tracking, and SQL analytics reports — including top spenders and
+            peak revenue hour identification.</p>
+            <div class="project-metric">
+              <span class="metric-num">$277</span>
+              <span class="metric-label">Peak hourly revenue identified (13:00)</span>
+            </div>
+            <div class="project-tags">
+              <span>Python</span><span>MySQL</span>
+              <span>Tkinter</span><span>Database Design</span>
+            </div>
+            <a href="#" class="project-link">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card project-card--muted">
+          <div class="project-header">
+            <div class="project-num">03 / Coming Soon</div>
+            <h3>More Projects in Progress</h3>
+          </div>
+          <div class="project-body">
+            <p>Currently working on new projects in bioinformatics, big data processing,
+            and statistical modeling. Check back soon or reach out to learn about
+            work in progress.</p>
+            <div class="project-tags">
+              <span>Python</span><span>R</span>
+              <span>Pandas</span><span>NumPy</span>
+            </div>
+            <a href="#contact" class="project-link">Get in touch →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       SKILLS
+  ============================== -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="eyebrow">
+          <div class="eyebrow-line"></div>
+          <span>Skills</span>
+        </div>
+        <h2>Technical Toolkit</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <div class="skill-group-icon">🐍</div>
+          <div class="skill-group-title">Languages</div>
+          <ul class="skill-list">
+            <li><span>SQL</span>       <div class="bar"><div class="bar-fill" data-width="88"></div></div></li>
+            <li><span>Python</span>    <div class="bar"><div class="bar-fill" data-width="72"></div></div></li>
+            <li><span>R</span>         <div class="bar"><div class="bar-fill" data-width="70"></div></div></li>
+            <li><span>Java</span>      <div class="bar"><div class="bar-fill" data-width="45"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">🤖</div>
+          <div class="skill-group-title">Machine Learning</div>
+          <ul class="skill-list">
+            <li><span>scikit-learn</span>      <div class="bar"><div class="bar-fill" data-width="82"></div></div></li>
+            <li><span>Classification</span>    <div class="bar"><div class="bar-fill" data-width="85"></div></div></li>
+            <li><span>Cross-validation</span>  <div class="bar"><div class="bar-fill" data-width="80"></div></div></li>
+            <li><span>Feature Eng.</span>      <div class="bar"><div class="bar-fill" data-width="78"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">📊</div>
+          <div class="skill-group-title">Data & Libraries</div>
+          <ul class="skill-list">
+            <li><span>Pandas</span>    <div class="bar"><div class="bar-fill" data-width="85"></div></div></li>
+            <li><span>NumPy</span>     <div class="bar"><div class="bar-fill" data-width="82"></div></div></li>
+            <li><span>Seaborn</span>   <div class="bar"><div class="bar-fill" data-width="75"></div></div></li>
+            <li><span>Data Cleaning</span> <div class="bar"><div class="bar-fill" data-width="88"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">🛠️</div>
+          <div class="skill-group-title">Tools</div>
+          <ul class="skill-list">
+            <li><span>MySQL</span>     <div class="bar"><div class="bar-fill" data-width="78"></div></div></li>
+            <li><span>Excel</span>     <div class="bar"><div class="bar-fill" data-width="80"></div></div></li>
+            <li><span>Linux CLI</span> <div class="bar"><div class="bar-fill" data-width="65"></div></div></li>
+            <li><span>Git</span>       <div class="bar"><div class="bar-fill" data-width="60"></div></div></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       RESUME
+  ============================== -->
+  <section id="resume">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="eyebrow">
+          <div class="eyebrow-line"></div>
+          <span>Resume</span>
+        </div>
+        <h2>Education & Experience</h2>
+      </div>
+
+      <div class="resume-layout">
+
+        <div class="resume-sidebar">
+          <div class="resume-card">
+            <div class="resume-avatar">SA</div>
+            <div class="resume-name">Sana Al Hamimidi</div>
+            <div class="resume-role">Data Science Student</div>
+            <!-- Replace href with your actual resume PDF path -->
+            <a href="assets/resume.pdf" class="btn-download" download>↓ Download Resume</a>
+            <div class="resume-contact-info">
+              <a href="mailto:s.alhamimidi04@gmail.com">s.alhamimidi04@gmail.com</a>
+              <span>(669) 210-5331</span>
+              <span>San Jose, CA · US Citizen</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-main">
+
+          <div class="resume-section">
+            <h3 class="resume-section-title">Education</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="tl-date">2022 — 2026</div>
+                <div class="tl-content">
+                  <strong>B.S. Data Science — San Jose State University</strong>
+                  <div class="tl-sub">San Jose, CA · GPA: 3.7 / 4.0</div>
+                  <p>Relevant coursework: Statistics, Data Modeling, Processing Big Data,
+                  Data Structures & Algorithms, Bioinformatics, Machine Learning, SQL, R, Python.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h3 class="resume-section-title">Projects</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="tl-date">2024</div>
+                <div class="tl-content">
+                  <strong>Human Activity Recognition</strong>
+                  <div class="tl-sub">Python · scikit-learn · XGBoost · Time-Series ML</div>
+                  <p>End-to-end ML pipeline on smartphone IMU data. Achieved 94.77% test
+                  accuracy and 0.9372 macro-F1 using XGBoost with engineered time-series features.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="tl-date">2024</div>
+                <div class="tl-content">
+                  <strong>Online Cafe Order Management System</strong>
+                  <div class="tl-sub">MySQL · Python · Tkinter · Database Design</div>
+                  <p>3-tier application with BCNF-normalized MySQL schema. SQL analytics
+                  identified peak revenue hour at 13:00 ($277.82/hr).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h3 class="resume-section-title">Soft Skills</h3>
+            <div class="soft-skills">
+              <span>Teamwork</span>
+              <span>Problem-Solving</span>
+              <span>Adaptability</span>
+              <span>Communication</span>
+              <span>Attention to Detail</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       CONTACT
+  ============================== -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="eyebrow">
+          <div class="eyebrow-line"></div>
+          <span>Contact</span>
+        </div>
+        <h2>Let's connect</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>I'm actively seeking internship and entry-level data science opportunities.
+          If you have a role, a project to collaborate on, or just want to connect —
+          I'd love to hear from you.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <span>s.alhamimidi04@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <strong>Phone</strong>
+                <span>(669) 210-5331</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <strong>Location</strong>
+                <span>San Jose, CA · US Citizen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Internship opportunity / Collaboration / ..." />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-name">Sana <span>Al Hamimidi</span></div>
+      <div class="footer-copy">© 2025 · Built with HTML, CSS & JS</div>
+      <div class="footer-links">
+        <!-- Replace # with your actual URLs -->
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="assets/resume.pdf" download>Resume</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
