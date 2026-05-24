@@ -64,7 +64,7 @@
     .hero-text { animation: fadeUp 0.8s 0.1s both; }
     .hero-text h1 { font-family: var(--font-display); font-size: clamp(48px, 6vw, 76px); font-weight: 600; color: var(--white); line-height: 1.05; margin-bottom: 24px; }
     .hero-text h1 em { color: var(--gold-light); font-style: normal; }
-    .hero-desc { font-size: 16px; color: rgba(255,255,255,0.55); line-height: 1.8; max-width: 480px; margin-bottom: 40px; font-weight: 300; }
+    .hero-desc { font-size: 16px; color: rgba(255,255,255,0.55); line-height: 1.8; max-width: 520px; margin-bottom: 40px; font-weight: 300; }
     .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
     .hero-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(167,139,202,0.25); border-radius: 6px; padding: 32px 28px; animation: fadeUp 0.8s 0.3s both; }
     .hero-card-label { font-family: var(--font-mono); font-size: 11px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-light); margin-bottom: 20px; }
@@ -107,9 +107,22 @@
     .project-tags span { background: rgba(59,45,110,0.07); color: var(--navy-mid); font-family: var(--font-mono); font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 2px; }
     .project-link { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--navy-light); transition: color 0.2s; margin-top: auto; }
     .project-link:hover { color: var(--gold); }
-    .coming-soon-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(167,139,202,0.15); border: 1px solid rgba(167,139,202,0.3); color: var(--navy-light); font-size: 12px; font-weight: 600; padding: 6px 14px; border-radius: 20px; margin-top: auto; width: fit-content; }
-    .coming-soon-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); animation: blink 1.4s infinite; }
-    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(196,174,224,0.15);
+      border: 1px solid rgba(196,174,224,0.3);
+      color: var(--gold-light);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+      white-space: nowrap;
+      font-family: var(--font-mono);
+      letter-spacing: 1px;
+    }
 
     /* ── SKILLS ── */
     #skills { background: var(--navy); }
@@ -239,20 +252,30 @@
           <span>Data Science Portfolio</span>
         </div>
         <h1>Sana<br><em>Al Hamimidi</em></h1>
-        <p class="hero-desc">Data Science student at SJSU. I build end-to-end ML pipelines, design databases, and turn messy data into clear, actionable results.</p>
+
+        <!-- UPDATED: student -> graduate -->
+        <p class="hero-desc">
+          Data Science graduate (B.S., San José State University). I build end-to-end ML pipelines, design databases,
+          and turn messy data into clear, actionable results.
+        </p>
+
         <div class="hero-ctas">
           <a href="#projects" class="btn-primary">View My Work →</a>
           <a href="#contact" class="btn-outline">Get In Touch</a>
         </div>
       </div>
+
       <div class="hero-card">
         <div class="hero-card-label">At a Glance</div>
+
+        <!-- UPDATED: GPA 3.5 + graduated -->
         <div class="stats-grid">
-          <div class="stat"><div class="stat-num">3.7</div><div class="stat-label">GPA at SJSU</div></div>
-          <div class="stat"><div class="stat-num">94%</div><div class="stat-label">Best model accuracy</div></div>
-          <div class="stat"><div class="stat-num">3+</div><div class="stat-label">Projects built</div></div>
-          <div class="stat"><div class="stat-num">2026</div><div class="stat-label">Graduation year</div></div>
+          <div class="stat"><div class="stat-num">3.5</div><div class="stat-label">GPA at SJSU</div></div>
+          <div class="stat"><div class="stat-num">95.5%</div><div class="stat-label">Best model accuracy</div></div>
+          <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Projects built</div></div>
+          <div class="stat"><div class="stat-num">2026</div><div class="stat-label">Graduated</div></div>
         </div>
+
         <div class="tag-list">
           <span class="tag">Python</span>
           <span class="tag">SQL</span>
@@ -273,15 +296,19 @@
       </div>
       <div class="about-grid">
         <div class="about-text">
-          <p>Hi, I'm <strong>Sana Al Hamimidi</strong> — a Data Science student at San Jose State University with hands-on experience building and evaluating machine learning models, working with real-world datasets, and communicating results clearly to teammates.</p>
-          <p>I'm comfortable across the full ML workflow: <strong>data cleaning, feature engineering, model training, and evaluation</strong>. My projects span database systems and time-series classification — always with a focus on measurable outcomes.</p>
-          <p>I'm actively seeking <strong>internship opportunities in data science or analytics</strong> where I can contribute and keep growing.</p>
+          <!-- UPDATED: student -> graduate -->
+          <p>Hi, I'm <strong>Sana Al Hamimidi</strong> — a Data Science graduate from San José State University with hands-on experience building and evaluating machine learning models, working with real-world datasets, and communicating results clearly to teammates.</p>
+          <p>I'm comfortable across the full workflow: <strong>data cleaning, feature engineering, model training, evaluation, and deployment</strong>. My projects span ML classification, interactive analytics, and product-focused capstone work.</p>
+          <!-- UPDATED: internship -> entry-level -->
+          <p>I'm currently seeking <strong>entry-level roles in data science, analytics, or machine learning</strong> where I can contribute and keep growing.</p>
         </div>
         <div class="about-highlights">
-          <div class="highlight"><div class="highlight-icon">🎓</div><div><strong>B.S. Data Science — SJSU</strong><span>Expected May 2026 · GPA: 3.7</span></div></div>
+          <!-- UPDATED -->
+          <div class="highlight"><div class="highlight-icon">🎓</div><div><strong>B.S. Data Science — SJSU</strong><span>Graduated May 2026 · GPA: 3.5</span></div></div>
           <div class="highlight"><div class="highlight-icon">📍</div><div><strong>San Jose, CA</strong><span>Open to remote and on-site roles</span></div></div>
-          <div class="highlight"><div class="highlight-icon">💡</div><div><strong>Interests</strong><span>ML Classification · Database Systems · Bioinformatics</span></div></div>
-          <div class="highlight"><div class="highlight-icon">🔍</div><div><strong>Currently seeking</strong><span>Data Science or Analytics internships for 2026</span></div></div>
+          <div class="highlight"><div class="highlight-icon">💡</div><div><strong>Interests</strong><span>ML · Data Visualization · Databases · Bioinformatics</span></div></div>
+          <!-- UPDATED -->
+          <div class="highlight"><div class="highlight-icon">🔍</div><div><strong>Currently seeking</strong><span>Full-time / entry-level opportunities</span></div></div>
         </div>
       </div>
     </div>
@@ -294,72 +321,88 @@
         <div class="eyebrow"><div class="eyebrow-line"></div><span>Projects</span></div>
         <h2>Selected Work</h2>
       </div>
+
       <div class="projects-grid">
 
+        <!-- Kept -->
         <div class="project-card">
           <div class="project-header">
             <div class="project-num">01 / Machine Learning</div>
             <h3>Human Activity Recognition</h3>
           </div>
           <div class="project-body">
-            <p>End-to-end activity recognition system using smartphone IMU sensor data. Built a full pipeline: preprocessing, segmentation, feature engineering from time-series windows, and benchmarked multiple ML classifiers. Boosted performance with XGBoost ensemble methods.</p>
+            <p>End-to-end activity recognition system using smartphone IMU sensor data. Built a full pipeline: preprocessing, segmentation, feature engineering from time-series windows, and benchmarked multiple ML classifiers.</p>
             <div class="project-metric">
               <span class="metric-num">94.77%</span>
               <span class="metric-label">Test accuracy · 0.9372 macro-F1</span>
             </div>
             <div class="project-tags"><span>Python</span><span>XGBoost</span><span>scikit-learn</span><span>Time-Series ML</span></div>
-            <a href="https://github.com/SanaAlHamimidi" class="project-link" target="_blank">View on GitHub →</a>
+            <a href="PASTE_GITHUB_REPO_LINK_HAR" class="project-link" target="_blank" rel="noreferrer">View on GitHub →</a>
           </div>
         </div>
 
+        <!-- NEW: Medicaid Drug Utilization Analysis -->
         <div class="project-card">
           <div class="project-header">
-            <div class="project-num">02 / Database Systems</div>
-            <h3>Online Cafe Order Management</h3>
+            <div class="project-num">02 / Data Visualization + ML</div>
+            <h3>Medicaid Drug Utilization Analysis</h3>
           </div>
           <div class="project-body">
-            <p>3-tier cafe order management system with a Tkinter GUI, Python MySQL connector, and a BCNF-normalized MySQL schema. Handles customer orders, sales tracking, and SQL analytics reports — including top spenders and peak revenue hour identification.</p>
+            <p>Analyzed large-scale CMS drug utilization data and built interactive visualizations plus ML models to explore reimbursement patterns and coverage differences.</p>
             <div class="project-metric">
-              <span class="metric-num">$277</span>
-              <span class="metric-label">Peak hourly revenue identified (13:00)</span>
+              <span class="metric-num">95.5%</span>
+              <span class="metric-label">Random Forest accuracy · ROC-AUC 0.99</span>
             </div>
-            <div class="project-tags"><span>Python</span><span>MySQL</span><span>Tkinter</span><span>Database Design</span></div>
-            <a href="https://github.com/SanaAlHamimidi" class="project-link" target="_blank">View on GitHub →</a>
+            <div class="project-tags"><span>Python</span><span>Plotly</span><span>scikit-learn</span><span>EDA</span></div>
+            <a href="PASTE_GITHUB_REPO_LINK_MEDICAID" class="project-link" target="_blank" rel="noreferrer">View on GitHub →</a>
           </div>
         </div>
 
-        <div class="project-card">
+        <!-- NEW: Animal Cafe Game -->
+        <div class="project-card project-card--muted">
           <div class="project-header">
-            <div class="project-num">03 / Statistical Analysis</div>
-            <h3>Penguin Morphology Analysis</h3>
+            <div class="project-num">03 / Software Project</div>
+            <h3>Animal Cafe Game</h3>
           </div>
           <div class="project-body">
-            <p>Analyzed the Palmer Penguins dataset to investigate morphological differences across species. Cleaned data, computed descriptive statistics, and visualized distributions. Performed one-way ANOVA with assumption checks via QQ plots and Bartlett's test.</p>
+            <p>Arcade-style cafe game with animal customers, timers, and recipe logic. Used JSON-driven design for recipes and animal behavior to make the game easy to extend.</p>
             <div class="project-metric">
-              <span class="metric-num">η²≈0.675</span>
-              <span class="metric-label">Effect size · F(2,331)=343.641, p≈0</span>
+              <span class="metric-num">3</span>
+              <span class="metric-label">Customers supported on-screen</span>
             </div>
-            <div class="project-tags"><span>R</span><span>ANOVA</span><span>Statistical Analysis</span><span>Data Visualization</span></div>
-            <span class="project-link" style="color: var(--text-light); cursor: default;">SJSU Course Project</span>
+            <div class="project-tags"><span>Python</span><span>Arcade</span><span>JSON</span><span>OOP</span></div>
+            <a href="PASTE_GITHUB_REPO_LINK_ANIMAL_CAFE" class="project-link" target="_blank" rel="noreferrer">View on GitHub →</a>
           </div>
         </div>
 
+        <!-- UPDATED: Vehicle project is FINISHED + capstone winner + GitHub link -->
         <div class="project-card project-card--coming" style="grid-column: 1 / -1;">
           <div class="project-header" style="display: grid; grid-template-columns: 1fr auto; align-items: start; gap: 20px;">
             <div>
-              <div class="project-num">04 / In Progress</div>
+              <div class="project-num">04 / Capstone</div>
               <h3>Vehicle Depreciation & Cost-of-Ownership Platform</h3>
             </div>
-            <span style="background: rgba(196,174,224,0.15); border: 1px solid rgba(196,174,224,0.3); color: var(--gold-light); font-size: 11px; font-weight: 600; padding: 5px 12px; border-radius: 20px; white-space: nowrap; font-family: var(--font-mono); letter-spacing: 1px;">IN PROGRESS</span>
+            <span class="badge-pill">🏆 CAPSTONE WINNER</span>
           </div>
+
           <div class="project-body" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
             <div>
-              <p>A data platform helping car buyers surface hidden long-term financial costs — depreciation, interest rates, and insurance — that are often overlooked at the time of purchase. The platform uses ML to assign each vehicle a depreciation rating (1–5 stars) based on historical value retention, reliability scores, and regional market demand across California.</p>
+              <p>A data platform helping car buyers surface long-term costs — depreciation, interest rates, and insurance — that are often overlooked at the time of purchase. Includes a depreciation rating (1–5 stars) based on historical value retention, reliability signals, and regional market demand.</p>
+              <div class="project-tags" style="margin-top: 12px;">
+                <span>Python</span><span>Machine Learning</span><span>Data Visualization</span><span>Depreciation Modeling</span><span>Insurance Data</span>
+              </div>
             </div>
+
             <div style="display: flex; flex-direction: column; gap: 14px;">
-              <div class="project-metric"><span class="metric-num">CA</span><span class="metric-label">Initial market scope · built for scalability</span></div>
-              <div class="project-tags"><span>Python</span><span>Machine Learning</span><span>Data Visualization</span><span>Depreciation Modeling</span><span>Insurance Data</span></div>
-              <div class="coming-soon-badge"><span class="coming-soon-dot"></span>Expected May 2026</div>
+              <div class="project-metric">
+                <span class="metric-num">✔</span>
+                <span class="metric-label">Status: Finished</span>
+              </div>
+
+              <a href="PASTE_GITHUB_REPO_LINK_VEHICLE_PLATFORM" class="project-link" target="_blank" rel="noreferrer">View on GitHub →</a>
+
+              <!-- Optional live/demo link -->
+              <a href="PASTE_LIVE_OR_DEMO_LINK_OPTIONAL" class="project-link" target="_blank" rel="noreferrer">Live / Demo →</a>
             </div>
           </div>
         </div>
@@ -427,6 +470,7 @@
         <div class="eyebrow"><div class="eyebrow-line"></div><span>Leadership</span></div>
         <h2>Leadership & Development</h2>
       </div>
+
       <div class="timeline">
         <div class="timeline-item">
           <div class="tl-date">Jan — May 2026</div>
@@ -434,12 +478,13 @@
             <strong>Fellow — The Braven Accelerator</strong>
             <div class="tl-sub">San Jose, California</div>
             <ul>
-              <li>Developing workforce skills such as leadership, organization, communication, teamwork, and problem solving by completing a 14-week leadership and professional development course.</li>
-              <li>Designing a career roadmap by engaging in a 7-step process that requires self-assessment and reflection, as well as role investigation and evaluation to determine the steps required to achieve career goals.</li>
+              <li>Developed workforce skills such as leadership, organization, communication, teamwork, and problem solving by completing a 14-week leadership and professional development course.</li>
+              <li>Designed a career roadmap using a 7-step process with self-assessment, reflection, and role investigation to determine steps needed to achieve career goals.</li>
             </ul>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -455,30 +500,38 @@
           <div class="resume-card">
             <div class="resume-avatar">SA</div>
             <div class="resume-name">Sana Al Hamimidi</div>
-            <div class="resume-role">Data Science Student</div>
-            <a href="Resume_Sana_Al_Hamimidi.pdf" class="btn-download" download>↓ Download Resume</a>
+
+            <!-- UPDATED -->
+            <div class="resume-role">Data Science Graduate</div>
+
+            <!-- UPDATED: only ONE resume; use resume.pdf -->
+            <a href="resume.pdf" class="btn-download" download>↓ Download Resume</a>
+
             <div class="resume-contact-info">
               <a href="mailto:s.alhamimidi04@gmail.com">s.alhamimidi04@gmail.com</a>
               <span>(669) 210-5331</span>
               <span>San Jose, CA</span>
+              <!-- Optional: add links -->
+              <!-- <a href="PASTE_LINKEDIN_LINK" target="_blank" rel="noreferrer">LinkedIn</a> -->
+              <!-- <a href="PASTE_GITHUB_PROFILE_LINK" target="_blank" rel="noreferrer">GitHub</a> -->
             </div>
           </div>
         </div>
-        <div class="resume-main">
 
+        <div class="resume-main">
           <div class="resume-section">
             <h3 class="resume-section-title">Education</h3>
             <div class="timeline">
               <div class="timeline-item">
-                <div class="tl-date">2024 — 2026</div>
+                <div class="tl-date">May 2026</div>
                 <div class="tl-content">
-                  <strong>B.S. Data Science — San Jose State University</strong>
-                  <div class="tl-sub">San Jose, CA · GPA: 3.7 / 4.0</div>
+                  <strong>B.S. Data Science — San José State University</strong>
+                  <div class="tl-sub">San Jose, CA · GPA: 3.5 / 4.0</div>
                   <p>Relevant coursework: Statistics, Data Modeling, Processing Big Data, Data Structures & Algorithms, Bioinformatics, Machine Learning, SQL, R, Python.</p>
                 </div>
               </div>
               <div class="timeline-item">
-                <div class="tl-date">2022 — 2024</div>
+                <div class="tl-date">Prior</div>
                 <div class="tl-content">
                   <strong>De Anza College</strong>
                   <div class="tl-sub">Cupertino, CA</div>
@@ -513,14 +566,16 @@
       </div>
       <div class="contact-grid">
         <div class="contact-info">
-          <p>I'm actively seeking internship and entry-level data science opportunities. If you have a role, a project to collaborate on, or just want to connect — I'd love to hear from you.</p>
+          <!-- UPDATED: internship -> entry-level -->
+          <p>I’m seeking entry-level opportunities in data science, analytics, or machine learning. If you have a role, a project to collaborate on, or just want to connect — I’d love to hear from you.</p>
           <div class="contact-items">
             <div class="contact-item"><div class="contact-icon">✉️</div><div><strong>Email</strong><span>s.alhamimidi04@gmail.com</span></div></div>
             <div class="contact-item"><div class="contact-icon">📞</div><div><strong>Phone</strong><span>(669) 210-5331</span></div></div>
             <div class="contact-item"><div class="contact-icon">📍</div><div><strong>Location</strong><span>San Jose, CA</span></div></div>
           </div>
         </div>
-        <!-- Formspree form — sends real emails to s.alhamimidi04@gmail.com -->
+
+        <!-- Formspree form — sends real emails -->
         <form class="contact-form" action="https://formspree.io/f/mbdzpqjl" method="POST">
           <div class="form-row">
             <div class="form-group">
@@ -534,7 +589,7 @@
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Internship opportunity / Collaboration / ..." />
+            <input type="text" id="subject" name="subject" placeholder="Job opportunity / Collaboration / ..." />
           </div>
           <div class="form-group">
             <label for="message">Message</label>
@@ -552,9 +607,9 @@
       <div class="footer-name">Sana <span>Al Hamimidi</span></div>
       <div class="footer-copy">© 2026 · Built with HTML, CSS & JS</div>
       <div class="footer-links">
-        <a href="https://github.com/SanaAlHamimidi" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/sana-al-hamimidi" target="_blank">LinkedIn</a>
-        <a href="Resume_Sana_Al_Hamimidi.pdf" download>Resume</a>
+        <a href="PASTE_GITHUB_PROFILE_LINK" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="PASTE_LINKEDIN_LINK" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="resume.pdf" download>Resume</a>
       </div>
     </div>
   </footer>
@@ -584,7 +639,12 @@
 
     // ── Scroll fade-in for cards and highlights ──
     const fadeObserver = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); fadeObserver.unobserve(e.target); } });
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          fadeObserver.unobserve(e.target);
+        }
+      });
     }, { threshold: 0.15 });
 
     document.querySelectorAll('.project-card, .highlight').forEach((el, i) => {
@@ -594,7 +654,12 @@
 
     // ── Skill bar animations ──
     const barObserver = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.style.width = e.target.getAttribute('data-width') + '%'; barObserver.unobserve(e.target); } });
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.width = e.target.getAttribute('data-width') + '%';
+          barObserver.unobserve(e.target);
+        }
+      });
     }, { threshold: 0.5 });
 
     document.querySelectorAll('.bar-fill').forEach(b => barObserver.observe(b));
